@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Montserrat", "sans-serif";
+}
+.container {
+  width: 80%;
+  height: 80%;
+  border: 1px solid #fffff1;
+  margin: 5% auto;
+}
+.card {
+  box-shadow: 0 8px 16px 0 #00000033;
+  border-radius: 8px;
+}
+
+.row1 {
+  height: 100%;
+  width: 50%;
+  float: left;
+  /* background: red; */
+}
+
+.row2 {
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+.cake-img {
+  margin-top: 10%;
+  height: 70%;
+  margin-left: 10%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.vr {
+  float: right;
+  border-left: 3px solid #e6e6e6;
+  height: 100%;
+}
+
+.inps {
+  width: 90%;
+  height: 95%;
+  float: left;
+  margin-top: 3rem;
+}
+
+.inps > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading {
+  text-align: left;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.heading1 {
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 0.2rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  color: #1d1d1d;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.inp {
+  border: none;
+  border-bottom: 2.5px solid #e6e6e6;
+  padding: 5px 10px;
+  outline: none;
+  width: 80%;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: 3rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background-color: #6b62ff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.add-profit-theme {
+  -webkit-animation: profit-theme 1s infinite; /* Safari 4+ */
+  -moz-animation: profit-theme 1s infinite; /* Fx 5+ */
+  -o-animation: profit-theme 1s infinite; /* Opera 12+ */
+  animation: profit-theme 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+.add-loss-theme {
+  -webkit-animation: loss-theme 1s infinite; /* Safari 4+ */
+  -moz-animation: loss-theme 1s infinite; /* Fx 5+ */
+  -o-animation: loss-theme 1s infinite; /* Opera 12+ */
+  animation: loss-theme 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+@keyframes profit-theme {
+  0%,
+  49% {
+    background-color: #ffffff;
+  }
+
+  50%,
+  100% {
+    background-color: #47cf73;
+  }
+}
+
+@keyframes loss-theme {
+  0%,
+  49% {
+    background-color: #ffffff;
+  }
+
+  50%,
+  100% {
+    background-color: #ff5c5c;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .row1 {
+    width: 100%;
+  }
+  .container {
+    margin-top: 12%;
+  }
+  .cake-img {
+    display: none;
+  }
+  .vr {
+    display: none;
+  }
+  .inps {
+    width: 100%;
+    height: 100%;
+  }
+  .inp {
+    padding: 0;
+    margin-left: 2rem;
+  }
+  .btn {
+    width: 35%;
+  }
+  .heading1 {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 1rem;
+  }
+}
